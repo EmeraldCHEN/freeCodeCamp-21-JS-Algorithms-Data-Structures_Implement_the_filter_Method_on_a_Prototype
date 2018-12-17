@@ -11,12 +11,11 @@ Array.prototype.myFilter1 = function(callback){
   return newArray; 
 }
   
-var new_s = s.myFilter1(function(item){
+let new_s1 = s.myFilter1(function(item){
   return item % 2 === 1;
- 
 });
 
-console.log(new_s); // [23, 65, 5]
+console.log(new_s1); // [23, 65, 5]
 
 
 
