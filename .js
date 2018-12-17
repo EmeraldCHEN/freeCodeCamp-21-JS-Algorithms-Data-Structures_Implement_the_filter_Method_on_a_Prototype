@@ -17,3 +17,10 @@ var new_s = s.myFilter1(function(item){
 });
 
 console.log(new_s); // [23, 65, 5]
+
+
+
+
+
+// Retrieved from
+// https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/functional-programming/implement-the-filter-method-on-a-prototype/
