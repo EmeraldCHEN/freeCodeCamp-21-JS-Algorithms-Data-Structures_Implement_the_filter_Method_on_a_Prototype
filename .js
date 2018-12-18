@@ -1,3 +1,4 @@
+/**************  Solution #1   ********************************************************************************************************/
 
 var s = [23, 65, 98, 5];
 
@@ -16,6 +17,23 @@ let new_s1 = s.myFilter1(function(item){
 });
 
 console.log(new_s1); // [23, 65, 5]
+
+
+/*****************   Solution #2     ****************************************************************************************************/
+
+Array.prototype.myFilter = function(callback){
+  let newArray = [];
+  for (let i = 0; i < this.length; i++){
+    if(callback(this[i])===true){
+      newArray.push(this[i]);
+    }
+  }
+  return newArray;
+};
+let new_s = s.myFilter(function(item){
+  return item % 3 === 2;
+});
+console.log(new_s); // [23, 65, 98, 5]
 
 
 
